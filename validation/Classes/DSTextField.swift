@@ -12,10 +12,10 @@ class DSTextField: UITextField, IValidatable
 {
    
     
-    @IBInspectable var valueRequired :Bool         = false
-    @IBInspectable var borderMistakeColor :UIColor = .clear
-    @IBInspectable var borderEmptyColor :UIColor   = .clear
-    @IBInspectable var borderFilledColor :UIColor  = .clear
+    @IBInspectable var valueRequired :Bool         = true
+    @IBInspectable var borderMistakeColor :UIColor = .red
+    @IBInspectable var borderEmptyColor :UIColor   = .lightGray
+    @IBInspectable var borderFilledColor :UIColor  = .green
     @IBInspectable var expression :String          = ""
     @IBInspectable var mistake :String             = ""
     @IBInspectable var showMistake :Bool           = true
