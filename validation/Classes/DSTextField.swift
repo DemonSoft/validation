@@ -79,7 +79,7 @@ class DSTextField: UITextField, IValidatable
     
     @objc func textEditEndedAction(_ sender: UITextField) {
         if self.mistake.count == 0 { return }
-        self.label.isHidden = self.isValid && self.showMistake
+        self.label.isHidden = self.showMistake ? self.isValid : true
     }
     
     private func calcBorderColor(_ sender: UITextField) -> UIColor {
